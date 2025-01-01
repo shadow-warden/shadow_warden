@@ -1,0 +1,31 @@
+*{
+    color:#d5d5d5;
+}
+body{
+    background-color: #9CEACA;
+}
+.words {
+    font-size: 25px;
+    text-align:left;
+    margin: auto;
+    width: 50%;
+    padding:25px;
+    margin-bottom:1px;
+    margin-top:1px;
+	border-radius: 10px;
+    background: #202020;
+    margin-top: 8px;
+    word-wrap: break-word;
+    overflow: auto;
+    transition-duration: 0.4s;
+    img {
+        display: block;
+        height: auto;
+        width: inherit;
+    }
+}
+@media (max-width: 670px) {
+    body{
+        background-color: goldenrod;
+    }
+}
