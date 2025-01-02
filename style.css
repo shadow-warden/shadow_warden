@@ -1,11 +1,59 @@
+@font-face {
+    font-family: 'PMD_font';
+    src:url('fonts/pokemon-md-full-version.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+    }
 *{
     color:#d5d5d5;
 }
 body{
+    font-family: "PMD_font";
     background-color: #9CEACA;
 }
+.profile-header{
+    background-color: #202020;
+    word-wrap: break-word;
+    font-size: 2.5em;
+    padding: 0.5em;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    border-image: url(images/Grass-top-overworld.png) repeat;
+    border-width: 20%;
+    img{
+        background-color: #d5d5d5;
+        width: auto;
+        height: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 50%;
+        border-style: ridge;
+        border-color: green;
+    }
+    /* grid-template-columns: "text","profile-img","text"; */
+    flex-direction: row;
+}
+img{
+    transition-duration: 100ms;
+}
+img:hover{
+    transform: scale(1.5,1.5);
+}
+#text{
+    /* color: aquamarine; */
+}
+#profile-img{
+    img{
+        background-color: #d5d5d5;
+        width: auto;
+        border-radius: 50%;
+        border-style: ridge;
+        border-color: green;
+    }
+}
 .words {
-    font-size: 25px;
+    font-size: 400%;
     text-align:left;
     margin: auto;
     width: 50%;
@@ -22,7 +70,11 @@ body{
         display: block;
         height: auto;
         width: inherit;
+        image-rendering: pixelated;
     }
+}
+nav{
+    font-size: 590%;
 }
 @media (max-width: 670px) {
     body{
